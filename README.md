@@ -40,11 +40,11 @@
 
 ## **Objective**
 
-To systematically analyze and compare the CPU performance of various loop construct in Python, highlighting their efficiency and execution time, and to provide there best use cases.
+This document aims to compare the CPU performance of for loops and while loops in Python. By evaluating their execution time and resource usage, we will identify which loop is more efficient and when to use each type effectively.
 
 ## **Understanding Loops**
  
- Loops are used to repeatedly execute a block of code as long as a certain condition is met. This is useful for tasks that require repeating actions, such as iterating over a list, performing calculations multiple times, or automating repetitive processes.
+Loops are used to repeatedly execute a block of code as long as a certain condition is met. This is useful for tasks that require repeating actions, such as iterating over a list, performing calculations multiple times, or automating repetitive processes.Loops provide a way to automate repetitive tasks, making code cleaner and more efficient.
 
 There are basically two different Loops in Python. 
 
@@ -357,10 +357,15 @@ for fruit in fruits:
 
 ## Conclusion-
 
-* For loops are typically faster, consume more CPU resources, and have better performance metrics, making them suitable for known iteration counts and iterating through collections.
-* While loops are more flexible for scenarios where the number of iterations is uncertain or dependent on dynamic conditions but are generally slower and more resource-intensive.
+This analysis of for loops and while loops in Python reveals that:
 
-This comparison highlights the strengths and weaknesses of both loop types, helping guide their appropriate usage in Python programming.
+* Performance: For loops are generally faster, executing in about 7.90 seconds, while while loops take around 14.97 seconds. This makes for loops more efficient for tasks with a known number of iterations.
+
+* CPU Usage: For loops also use CPU resources more effectively, consuming approximately 38%, compared to the while loop's 32%.
+
+* Best Use Cases: Use for loops when the number of iterations is fixed, such as iterating through a list. Choose while loops for scenarios where the number of iterations can change, like waiting for user input.
+
+In summary, for loops are preferred for their speed and efficiency, while while loops offer flexibility. Choosing the right loop type can significantly improve the performance of your Python code.
 
 
 ## References-
