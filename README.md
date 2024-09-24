@@ -227,13 +227,12 @@ print(squares)
 * Counting Numbers: Generate sequences of numbers.
 
 
-* Creating Patterns: Build shapes or grids with characters.
-
-
 * Condition-Based Repetition: Continue running until a condition changes.
 
 
 * Summing Values: Add up or calculate values.
+
+  
 
 ## **Best use cases**
 #### **When we use while loops?**
