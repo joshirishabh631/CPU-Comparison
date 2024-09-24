@@ -152,6 +152,46 @@ cProfile.run('run_while_loop()')
 
 ## **Big O Notation for Python Loops**
 
+The Big O notation helps analyze how loops perform as input size increases. The time complexity of loops is determined by how many iterations they run and how this changes as the size of the input (n) grows.
+
+- **for loop-**
+
+  A for loop runs a specific number of times, usually based on the size of a list or range of numbers.
+
+```python
+list = ["Mohit","Rohit","Sobhit","Ram","Shyam","Priyank","Charan"]
+for item in list:
+    print(item)
+```
+* What happens?   The loop goes over each element in the list arr and prints it.
+* How many times?   If the list has 7 elements, the loop runs 7 times.
+* Big O notation:   O(7), because the loop runs once for each element in the list, and the number of operations grows with the size of the list.
+
+- **while Loops-**
+A while loop keeps running as long as a condition is True. It can stop based on certain conditions inside the loop.
+```python
+n = 0
+while n < 10:
+    print(n)
+    n+=1
+```
+* What happens?   The loop prints the number n and add 1 from it each time until n reaches smaller than 0.
+* How many times?   If n starts at 0, the loop runs 10 times.
+* Big O notation:   O(10), because it depends on the starting value of 0, and the loop runs 10 times.
+
+- **While Loop with Dividing (Logarithmic Time: O(log n))**
+
+A while loop reduces the problem size by a certain factor each time, like dividing the value of n in half. This creates a logarithmic time complexity.
+
+```python
+n =200
+while n > 1:
+    n = n // 2
+    print(n)
+```
+
+* What happens? The loop keeps dividing 200 by 2 until it reaches 1.
+* Big O notation: O(log n), because the number of iterations depends on how many times 200 can be divided by 2. If n starts at 200, the loop runs 8 times (200 → 100 → 50 → 25 → 12.5 → 6.25 → 3.125 → 1.56 → 0.78).
 
 ## Concluding CPU Comparision-
 
@@ -340,3 +380,6 @@ This comparison highlights the strengths and weaknesses of both loop types, help
 
 5. **General Python Performance Tips**:
    - [Python Performance Tips](https://towardsdatascience.com/python-performance-tips-8e9e31c4e3c4)
+
+6. **Big O Notation**:
+   - [Big O notation](https://brilliant.org/wiki/big-o-notation/)
