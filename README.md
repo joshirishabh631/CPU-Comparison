@@ -152,7 +152,7 @@ iterations = 100000000
 start_cpu_for = psutil.cpu_percent(interval=None)
 
 for i in range(iterations):
-    pass  # Empty loop just for testing
+    pass  
 
 end_cpu_for = psutil.cpu_percent(interval=None)
 
@@ -190,25 +190,25 @@ Let us see it with an example to compare for and while loop:
 ```python
 import cProfile
 
-# Number of iterations for the loops
+
 iterations = 10000000
 
 # Function with a for loop
 def run_for_loop():
     for i in range(iterations):
-        pass  # Do nothing, just loop
+        pass  
 
 # Function with a while loop
 def run_while_loop():
     i = 0
     while i < iterations:
-        i += 1  # Do nothing, just loop
+        i += 1 
 
-# Profile the for loop
+
 print("Profiling the for loop:")
 cProfile.run('run_for_loop()')
 
-# Profile the while loop
+
 print("\nProfiling the while loop:")
 cProfile.run('run_while_loop()')
 ```
