@@ -219,22 +219,6 @@ print(squares)
 #### Output
 ![Program Output](forloop.png)
 
-### Nested Loop
-
-There is one more loop in Python which is **Nested loop**. 
-You can have loops inside other loops. These are called Nested loops. Mainly Python have two types loops but we can use this nested loop for running a loop inside another loop.  
-
-**Example code-**
-
-```python
- for i in range(3):  
-    for j in range(4):    
-        print("*", end=" ")  
-    print() 
-```
-### Output
-![Program Output](nestedex.png)
-
 ## Uses of Loops 
 
 * Repeating Actions: Run the same code multiple times.
