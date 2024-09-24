@@ -18,6 +18,8 @@
 - [psutil module](#psutil-module)
 
 - [cprofile module](#cprofile-module)
+  
+- [Big O Notation for Python Loops](#Big-O-Notation-for-Python-Loops)
 
 - [Concluding CPU Comparison](#Conclusion)
 
@@ -147,6 +149,8 @@ cProfile.run('run_while_loop()')
 ```
 #### Output-
 ![Program Output](cpro.png)
+
+## **Big O Notation for Python Loops**
 
 
 ## Concluding CPU Comparision-
