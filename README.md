@@ -40,7 +40,7 @@
 
 ## **Objective**
 
-To systematically analyze and compare the CPU performance of various loop construct in Python, highlighting their efficiency, memory usage, and execution time, and to provide there best use cases.
+To systematically analyze and compare the CPU performance of various loop construct in Python, highlighting their efficiency and execution time, and to provide there best use cases.
 
 ## **Understanding Loops**
  
