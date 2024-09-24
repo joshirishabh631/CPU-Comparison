@@ -11,7 +11,15 @@
 <!-- TOC -->
 1- [Objective](#objective)
 
-2- [CPU Comparison](#cpu-comparison)
+2- [Understanding Loops](#understanding-loops)
+
+- [While loop](#while-loop)
+
+- [For loop](#for-loop)
+
+3- [Uses of Loops](#uses-of-loops)
+
+4- [CPU Comparison](#cpu-comparison)
 
 - [Time module](#Time-module)
 
@@ -23,25 +31,82 @@
 
 - [Concluding CPU Comparison](#Conclusion)
 
-4- [Understanding Loops](#understanding-loops)
+5- [Best Use Cases](#best-use-cases)
 
-- [While loop](#while-loop)
+6- [Conclusion](#conclusion)
 
-- [For loop](#for-loop)
-
-5- [Uses of Loops](#uses-of-loops)
-
-6- [Best Use Cases](#best-use-cases)
-
-7- [Conclusion](#conclusion)
-
-8- [References](#references)
+7- [References](#references)
 <!-- /TOC -->
 
 ## **Objective**
 
 To systematically analyze and compare the CPU performance of various loop construct in Python, highlighting their efficiency, memory usage, and execution time, and to provide there best use cases.
 
+## **Understanding Loops**
+ 
+ Loops are used to repeatedly execute a block of code as long as a certain condition is met. This is useful for tasks that require repeating actions, such as iterating over a list, performing calculations multiple times, or automating repetitive processes.
+
+There are basically two different Loops in Python. 
+
+**1- While Loop**
+
+**2- For Loop**
+
+## While Loop 
+
+
+A while loop is a way to repeat actions in your program until something changes. It keeps running a block of code as long as a certain condition remains true. Once that condition becomes false, the loop stops.
+
+**Example code -**
+```python
+secret_number = 99
+guess = 0
+
+while guess != secret_number:
+    guess = int(input("Guess the secret number (1-100): "))
+    if guess == secret_number:
+        print("Congrats! You guessed it right!")
+    elif guess > 100 or guess < 1:
+        print("Invalid input: Please enter a number between 1 and 100.")
+    else:
+        print("Try again!")
+
+print("Game over.")
+```
+#### Output -
+
+![Program Output](Untitled.png)
+
+
+## For Loop 
+
+In Python, a for loop is used to repeat a block of code a certain number of times or to go through items in a collection (like a list, string, or range of numbers). It's great for when you know exactly how many times you want to loop.
+
+**Example code -**
+```python
+
+squares = [x**2 for x in range(11)]
+
+print(squares)
+
+```
+#### Output
+![Program Output](forloop.png)
+
+## Uses of Loops 
+
+* Repeating Actions: Run the same code multiple times.
+
+
+* Counting Numbers: Generate sequences of numbers.
+
+
+* Condition-Based Repetition: Continue running until a condition changes.
+
+
+* Summing Values: Add up or calculate values.
+
+  
 ## **CPU Comparison** 
 In Python, CPU comparison means looking at how well the CPU (the brain of the computer) handles different pieces of code. This helps us see which parts of the code run faster or slower and which parts make the CPU work harder. By comparing, we can improve the code to make it run more efficiently
 
@@ -212,71 +277,7 @@ while n > 1:
 - **While loops** may require more resources in certain cases.
 
 
-## **Understanding Loops**
- 
- Loops are used to repeatedly execute a block of code as long as a certain condition is met. This is useful for tasks that require repeating actions, such as iterating over a list, performing calculations multiple times, or automating repetitive processes.
 
-There are basically two different Loops in Python. 
-
-**1- While Loop**
-
-**2- For Loop**
-
-## While Loop 
-
-
-A while loop is a way to repeat actions in your program until something changes. It keeps running a block of code as long as a certain condition remains true. Once that condition becomes false, the loop stops.
-
-**Example code -**
-```python
-secret_number = 99
-guess = 0
-
-while guess != secret_number:
-    guess = int(input("Guess the secret number (1-100): "))
-    if guess == secret_number:
-        print("Congrats! You guessed it right!")
-    elif guess > 100 or guess < 1:
-        print("Invalid input: Please enter a number between 1 and 100.")
-    else:
-        print("Try again!")
-
-print("Game over.")
-```
-#### Output -
-
-![Program Output](Untitled.png)
-
-
-## For Loop 
-
-In Python, a for loop is used to repeat a block of code a certain number of times or to go through items in a collection (like a list, string, or range of numbers). It's great for when you know exactly how many times you want to loop.
-
-**Example code -**
-```python
-
-squares = [x**2 for x in range(11)]
-
-print(squares)
-
-```
-#### Output
-![Program Output](forloop.png)
-
-## Uses of Loops 
-
-* Repeating Actions: Run the same code multiple times.
-
-
-* Counting Numbers: Generate sequences of numbers.
-
-
-* Condition-Based Repetition: Continue running until a condition changes.
-
-
-* Summing Values: Add up or calculate values.
-
-  
 
 ## **Best use cases**
 #### **When we use while loops?**
