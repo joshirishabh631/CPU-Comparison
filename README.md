@@ -21,7 +21,7 @@
 
 4- [CPU Comparison](#cpu-comparison)
 
-- [Time module](#Time-module)
+- [time module](#Time-module)
 
 - [psutil module](#psutil-module)
 
@@ -112,7 +112,7 @@ CPU comparison means looking at how well the CPU (the brain of the computer) han
 
 ## **CPU Comparison: For loop VS While loop**
 
-### Time module
+### time module
 
 * **Firstly we are comparing For and While loop as per the time taken by both of them while execution. We have used **"Time"** Module for checking that how much time did For loop takes to be executed and same for while loop.**
 
@@ -232,7 +232,7 @@ for item in list:
 * How many times?   If the list has 7 elements, the loop runs 7 times.
 * Big O notation:   O(7), because the loop runs once for each element in the list, and the number of operations grows with the size of the list.
 
-- **while Loops-**
+- **While Loops-**
 A while loop keeps running as long as a condition is True. It can stop based on certain conditions inside the loop.
 ```python
 n = 0
