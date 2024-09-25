@@ -141,7 +141,7 @@ print(f"While loop time: {while_loop_time}")
 
 ### psutil module 
 
-* **Now, showing CPU usage of For and While Loop by using **"psutill" (process and system utilities)** module, which fetch cpu usage details from API's which are being use by any operating system . ex- (cat /proc/stat)- we can use this command for checking CPU usage in Ubuntu. psutill module fetch data from /proc/stat and give usage details for execution of loops.**
+* **Now, showing CPU usage of For and While Loop by using **"psutill" (process and system utilities)** module, which fetch cpu usage details from API's which are being use by any operating system . ex- (cat /proc/stat)- we can use this command for checking CPU usage. psutill module fetch data from /proc/stat and give usage details for execution of loops.**
 
 **Example code**
 ```python
