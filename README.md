@@ -384,8 +384,5 @@ In summary, for loops are preferred for their speed and efficiency, while while 
    - [Python Loop Performance Comparison](https://realpython.com/python-for-loop/)
    - [Understanding Time Complexity in Python](https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/)
 
-5. **General Python Performance Tips**:
-   - [Python Performance Tips](https://towardsdatascience.com/python-performance-tips-8e9e31c4e3c4)
-
-6. **Big O Notation**:
+7. **Big O Notation**:
    - [Big O notation](https://brilliant.org/wiki/big-o-notation/)
