@@ -271,12 +271,16 @@ while n > 1:
 | **Profiling - percall**   | 0.319 seconds              | 0.704 seconds               |
 
 
-**Overall, the data clearly indicates that the for loop is more efficient than the while loop in this scenario. It executes faster, uses the CPU more effectively, and spends less time per iteration. This suggests that for scenarios where iteration is involved, using a for loop may be the preferable choice, especially when performance is a critical factor.**
+- **Speed:**
+The for loop is much faster (7.90 seconds) than the while loop (14.97 seconds).
 
-- **For loops** are generally preferred for their efficiency and readability.
-- **While loops** may require more resources in certain cases.
+- **CPU Usage:**
+The for loop uses more CPU (38%) compared to the while loop (32%), but it completes the task quicker.
 
+- **Efficiency:**
+The for loop has lower total execution time (0.32 seconds) and time per call (0.319 seconds) compared to the while loop (0.70 seconds total, 0.704 seconds per call).
 
+**For loops** are generally preferred for their efficiency and readability.**While loops** may require more resources in certain cases.
 
 
 ## **Best use cases**
