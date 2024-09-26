@@ -29,7 +29,7 @@
   
 - [Big O Notation for Python Loops](#Big-O-Notation-for-Python-Loops)
 
-- [Concluding CPU Comparison](#Concluding-CPU-Comparison)
+- [Concluding CPU Comparison](#Concluding)
 
 5- [Best Use Cases](#best-use-cases)
 
