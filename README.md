@@ -7,35 +7,28 @@
 
 
 
-## **Table of Content**  
+## **Table of Contents**  
 <!-- TOC -->
-1- [Objective](#objective)
+1. [Objective](#objective)
 
-2- [Understanding Loops](#understanding-loops)
+2. [Understanding Loops](#understanding-loops)
+   - [While Loop](#while-loop)
+   - [For Loop](#for-loop)
 
-- [While loop](#while-loop)
+3. [Uses of Loops](#uses-of-loops)
 
-- [For loop](#for-loop)
+4. [CPU Comparison](#cpu-comparison)
+   - [Time Module](#time-module)
+   - [Psutil Module](#psutil-module)
+   - [CProfile Module](#cprofile-module)
+   - [Big O Notation for Python Loops](#big-o-notation-for-python-loops)
+   - [Concluding CPU Comparison](#concluding-cpu-comparison)
 
-3- [Uses of Loops](#uses-of-loops)
+5. [Best Use Cases](#best-use-cases)
 
-4- [CPU Comparison](#cpu-comparison)
+6. [Conclusion](#conclusion)
 
-- [time module](#Time-module)
-
-- [psutil module](#psutil-module)
-
-- [cprofile module](#cprofile-module)
-  
-- [Big O Notation for Python Loops](#Big-O-Notation-for-Python-Loops)
-
-- [Concluding CPU Comparison](#Concluding)
-
-5- [Best Use Cases](#best-use-cases)
-
-6- [Conclusion](#conclusion)
-
-7- [Reference links ](#References-links)
+7. [Reference Links](#reference-links)
 <!-- /TOC -->
 
 ## **Objective**
