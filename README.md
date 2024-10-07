@@ -22,7 +22,7 @@
    - [Psutil Module](#psutil-module)
    - [CProfile Module](#cprofile-module)
    - [Big O Notation for Python Loops](#big-o-notation-for-python-loops)
-   - [Concluding CPU Comparison](#Concluding CPU Comparision-)
+   - [Concluding CPU Comparison](#Concluding-CPU-Comparision-)
 
 5. [Best Use Cases](#best-use-cases)
 
