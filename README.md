@@ -97,8 +97,6 @@ print(squares)
 * Condition-Based Repetition: Continue running until a condition changes.
 
 
-* Summing Values: Add up or calculate values.
-
   
 ## **CPU Comparison** 
 CPU comparison means looking at how well the CPU (the brain of the computer) handles different pieces of code. This helps us see which parts of the code run faster or slower and which parts make the CPU work harder. By comparing, we can improve the code to make it run more efficiently
