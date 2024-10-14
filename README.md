@@ -48,7 +48,7 @@ There are basically two different Loops in Python.
 ## While Loop 
 
 
-A while loop is a way to repeat actions in your program until something changes. It keeps running a block of code as long as a certain condition remains true. Once that condition becomes false, the loop stops.
+A while loop is a way to repeat actions in your program until given condition turns true. It keeps running a block of code as long as a certain condition remains true. Once that condition becomes false, the loop stops.
 
 **Example code -**
 ```python
