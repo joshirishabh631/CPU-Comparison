@@ -33,7 +33,7 @@
 
 ## **Objective**
 
-This document aims to compare the CPU performance of for loops and while loops in Python. By evaluating their execution time and resource usage, we will identify which loop is more efficient and when to use each type effectively.
+This document compares the performance of for loops and while loops in Python. We will look at how long each type of loop takes to execute and how much computer resources they use. By doing this, we aim to find out which loop is more efficient and when it is best to use each type.
 
 ## **Understanding Loops**
  
