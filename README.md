@@ -356,8 +356,8 @@ This analysis of for loops and while loops in Python reveals that:
 
 * Performance: For loops are generally faster, executing in about 7.90 seconds, while while loops take around 14.97 seconds. This makes for loops more efficient for tasks with a known number of iterations.
 
-* CPU Usage: For loops also use CPU resources more effectively, consuming approximately 38%, compared to the while loop's 32%.
-
+* CPU Usage: For loops also use CPU resources more effectively, consuming approximately 38%, compared to the while loop's 32% , so while loop is more effecient in this perticular scenario.
+  
 * Best Use Cases: Use for loops when the number of iterations is fixed, such as iterating through a list. Choose while loops for scenarios where the number of iterations can change, like waiting for user input.
 
 In summary, for loops are preferred for their speed and efficiency, while while loops offer flexibility. Choosing the right loop type can significantly improve the performance of your Python code.
