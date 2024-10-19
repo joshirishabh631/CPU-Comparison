@@ -122,6 +122,7 @@ start_time = time.time()
 i = 0
 while i < 100000000:
     i += 1
+    pass
 while_loop_time = time.time() - start_time
 
 print(f"For loop time: {for_loop_time}")
