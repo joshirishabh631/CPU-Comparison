@@ -165,7 +165,7 @@ print(f"While loop CPU usage: {end_cpu_while - start_cpu_while}%")
 
 ### cprofile module
 
-* **Now, we will use **"cproile"** module to see the CPU comparison between for and while loops. cprofile module helps to give various aspects as :**
+* **Now, we will use **"cprofile"** module to see the CPU comparison between for and while loops. cprofile module helps to give various aspects as :**
     
     ncalls: Number of times a function was called ,
     
