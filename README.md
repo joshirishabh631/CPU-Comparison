@@ -100,7 +100,7 @@ print(squares)
 ## **CPU Comparison** 
 CPU comparison means looking at how well the CPU (the brain of the computer) handles different pieces of code. This helps us see which parts of the code run faster or slower and which parts make the CPU work harder. By comparing, we can improve the code to make it run more efficiently
 
-## **CPU Comparison: For loop VS While loop**
+## **CPU Comparison: For Loop VS While Loop**
 
 ### time module
 
@@ -132,7 +132,7 @@ print(f"While loop time: {while_loop_time}")
 
 ### psutil module 
 
-* **Now, showing CPU usage of For and While Loop by using **"psutill" (process and system utilities)** module, which fetch cpu usage details from API's which are being use by any operating system . ex- (cat /proc/stat)- we can use this command for checking CPU usage. psutill module fetch data from /proc/stat and give usage details for execution of loops.**
+* **Now, showing CPU usage of For and While Loop by using **"psutil" (process and system utilities)** module, which fetch cpu usage details from APIs which are being use by any operating system . e.g.- (cat /proc/stat)- we can use this command for checking CPU usage. psutill module fetch data from /proc/stat and give usage details for execution of loops.**
 
 **Example code**
 ```python
@@ -206,7 +206,7 @@ cProfile.run('run_while_loop()')
 #### Output-
 ![Program Output](cpro.png)
 
-## Concluding CPU Comparision-
+## Concluding CPU Comparsion-
 
 
 | Aspect                   | For Loop               | While Loop              |
@@ -313,7 +313,7 @@ This analysis of for loops and while loops in Python reveals that:
 
 * Performance: For loops are generally faster, executing in about 7.90 seconds, while while loops take around 14.97 seconds. This makes for loops more efficient for tasks with a known number of iterations.
 
-* CPU Usage: For loops also use CPU resources more effectively, consuming approximately 38%, compared to the while loop's 32% , so For loop is more effecient in this scenario also.
+* CPU Usage: For loops also use CPU resources more effectively, consuming approximately 38%, compared to the while loop's 32% , so For loop is more efficient in this scenario also.
   
 * Best Use Cases: Use for loops when the number of iterations is fixed, such as iterating through a list. Choose while loops for scenarios where the number of iterations can change, like waiting for user input.
 
