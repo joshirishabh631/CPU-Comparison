@@ -185,7 +185,7 @@ print("Monitoring complete.")
 
 
 #### Output-
-![Program Output](psutil.png)
+![Program Output](psutil1.png)
 
 ### cprofile module
 
