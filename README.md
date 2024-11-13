@@ -187,6 +187,14 @@ print("Monitoring complete.")
 #### Output-
 ![Program Output](psutil1.png)
 
+## Graph of CPU percentage usage -:
+
+- Avg of For Loop CPU usage =(44.0+34.4+48.1+38.7+79.8+39.3)/6= **47.38%**
+- Avg of While Loop CPU usage =(29.9+28.4+26.7+26.1+26.2+26.1)/6= **27.23%**
+
+ ![Program Output](chart.png)
+
+
 ### cprofile module
 
 * **Now, we will use **"cprofile"** module to see the CPU comparison between for and while loops. cprofile module helps to give various aspects as :**
