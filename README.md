@@ -132,31 +132,55 @@ print(f"While loop time: {while_loop_time}")
 
 ### psutil module 
 
-* **Now, showing CPU usage of For and While Loop by using **"psutil" (process and system utilities)** module, which fetch cpu usage details from APIs which are being use by any operating system . e.g.- (cat /proc/stat)- we can use this command for checking CPU usage. psutill module fetch data from /proc/stat and give usage details for execution of loops.**
+* **Now, showing CPU usage of For and While Loop by using **"psutil" (process and system utilities)** module, which fetch cpu usage details from APIs which are being use by any operating system . e.g.- (cat /proc/stat)- we can use this command for checking CPU usage. psutill module fetch data from /proc/stat and give usage details for execution of loops and here we will show CPU usage percentage during running Loop.**
 
 **Example code**
 ```python
 import psutil
+import time
 
-iterations = 100000000
+iterations = 100000000  
+check_points = 6  # Number of CPU checks during the loop
+interval = 1  # Interval of 1 second 
 
-start_cpu_for = psutil.cpu_percent(interval=None)
+def monitor_cpu_usage(loop_type, iterations, check_points, interval):
+    print(f"\nMonitoring CPU usage during '{loop_type}' loop:")
+    
+    cpu_usages = []
+    start_time = time.time()
+    next_check_time = start_time + interval
 
-for i in range(iterations):
-    pass  
+    if loop_type == 'for':
+        for i in range(iterations):
+         
+            if len(cpu_usages) < check_points and time.time() >= next_check_time:
+                cpu_usage = psutil.cpu_percent(interval=None)
+                elapsed_time = time.time() - start_time
+                print(f"Check {len(cpu_usages) + 1}: Time: {elapsed_time:.2f}s | {loop_type} Loop CPU Usage: {cpu_usage}%")
+                cpu_usages.append(cpu_usage)
+                next_check_time += interval 
+        
+    elif loop_type == 'while':
+        i = 0
+        while i < iterations:
+           
+            if len(cpu_usages) < check_points and time.time() >= next_check_time:
+                cpu_usage = psutil.cpu_percent(interval=None)
+                elapsed_time = time.time() - start_time
+                print(f"Check {len(cpu_usages) + 1}: Time: {elapsed_time:.2f}s | {loop_type} Loop CPU Usage: {cpu_usage}%")
+                cpu_usages.append(cpu_usage)
+                next_check_time += interval 
+            i += 1
 
-end_cpu_for = psutil.cpu_percent(interval=None)
+    print(f"\n{loop_type} loop complete.\n")
 
-start_cpu_while = psutil.cpu_percent(interval=None)
+monitor_cpu_usage('for', iterations, check_points, interval)
 
-i = 0
-while i < iterations:
-    i += 1
 
-end_cpu_while = psutil.cpu_percent(interval=None)
+monitor_cpu_usage('while', iterations, check_points, interval)
 
-print(f"For loop CPU usage: {end_cpu_for - start_cpu_for}%")
-print(f"While loop CPU usage: {end_cpu_while - start_cpu_while}%")
+print("Monitoring complete.")
+
 ```
 
 
