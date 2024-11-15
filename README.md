@@ -250,6 +250,9 @@ cProfile.run('run_while_loop()')
 - The for loop uses more CPU because it needs more power to run each iteration.
 - The while loop uses less CPU but takes more time to finish due to its flexible structure.
 
+**Graph showing CPU usage for both For and While Loop with respect to time.**
+![Program Output](graph3.png)
+
 ## **Best use cases**
 #### **When we use while loops?**
 
