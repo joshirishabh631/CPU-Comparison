@@ -240,27 +240,75 @@ cProfile.run('run_while_loop()')
 
 ## Concluding CPU Comparsion-
 
+**Now,I will plot the graph after comparing both time and CPU usage of For and While Loop in three intervals to show the time taken and effective use of CPU resources.**
 
-| Aspect                   | For Loop               | While Loop              |
-|--------------------------|------------------------|-------------------------|
-| **Execution Time**       | 7.90 seconds              | 14.97 seconds               |
-| **CPU Usage**            |38 %                     | 32%         |
-| **Profiling - ncalls**   | 4 calls                | 4 calls                 |
-| **Profiling - tottime**  | 0.32 seconds              | 0.70 seconds               |
-| **Profiling - cumtime**   | 0.319 seconds              | 0.704 seconds               |
-| **Profiling - percall**   | 0.319 seconds              | 0.704 seconds               |
+```bash
+import time
+import psutil
+import os
 
+def measure_detailed_performance(loop_type):
+    process = psutil.Process(os.getpid())  # Get the current process
+    print(f"\nMeasuring {loop_type} loop performance...\n")
 
-- **Speed:**
-The for loop is much faster (7.90 seconds) than the while loop (14.97 seconds).
+    # Measure CPU usage and time before running the loop
+    cpu_before_start = process.cpu_percent(interval=None)
+    start_time = time.time()
 
-- **CPU Usage:**
-The for loop uses more CPU (38%) compared to the while loop (32%), but it completes the task quicker.
+    total_iterations = 10**7  # Adjust the range as needed
+    mid_point = total_iterations // 2
 
-- **Efficiency:**
-The for loop has lower total execution time (0.32 seconds) and time per call (0.319 seconds) compared to the while loop (0.70 seconds total, 0.704 seconds per call).
+    # Tracking results for three parts: start, mid, and end
+    times = []
+    cpu_usages = []
 
-**For loops** are generally preferred for their efficiency and readability.**While loops** may require more resources in certain cases.
+    # Run the selected loop fully
+    if loop_type == 'for':
+        for i in range(total_iterations):
+            # Capture start data
+            if i == 0:
+                times.append(time.time() - start_time)
+                cpu_usages.append(process.cpu_percent(interval=None))
+            
+            # Capture mid data
+            if i == mid_point:
+                times.append(time.time() - start_time)
+                cpu_usages.append(process.cpu_percent(interval=None))
+
+        # Capture end data
+        times.append(time.time() - start_time)
+        cpu_usages.append(process.cpu_percent(interval=None))
+    
+    elif loop_type == 'while':
+        count = 0
+        while count < total_iterations:
+            count += 1
+
+            # Capture start data
+            if count == 1:
+                times.append(time.time() - start_time)
+                cpu_usages.append(process.cpu_percent(interval=None))
+            
+            # Capture mid data
+            if count == mid_point:
+                times.append(time.time() - start_time)
+                cpu_usages.append(process.cpu_percent(interval=None))
+
+        # Capture end data
+        times.append(time.time() - start_time)
+        cpu_usages.append(process.cpu_percent(interval=None))
+    
+    # Print the detailed results for the loop type
+    labels = ["Start", "Mid", "End"]
+    for idx in range(3):
+        print(f" {labels[idx]}: Time: {times[idx]:.4f} seconds, CPU Usage: {cpu_usages[idx]:.2f}%")
+
+# Measure the performance of both loops
+measure_detailed_performance('for')
+measure_detailed_performance('while')
+```
+#### Output-
+![Program Output](timecpu.png)
 
 
 ## **Best use cases**
