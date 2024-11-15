@@ -310,6 +310,10 @@ measure_detailed_performance('while')
 #### Output-
 ![Program Output](timecpu.png)
 
+- Now,lets see how the graphical data shows the comparison.
+ 
+![Program Output](chart2.png)
+
 
 ## **Best use cases**
 #### **When we use while loops?**
