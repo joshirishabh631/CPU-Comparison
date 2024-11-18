@@ -10,6 +10,3 @@ This project compares the performance of different loop structures in Python, fo
 
 ## Results
 The project provides insights into the efficiency of different loop structures in Python, helping developers choose the most optimal loop based on their specific use case.
-
-## License
-This project is licensed under the MIT License.
