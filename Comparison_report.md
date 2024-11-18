@@ -149,7 +149,7 @@ def monitor_cpu_usage(loop_type, iterations, check_interval):
     
     if loop_type == 'for':
         for i in range(iterations):
-            # Check CPU usage every 1000 iterations
+            # Check CPU usage every 10000000 iterations
             if i % check_interval == 0:
                 cpu_usage = psutil.cpu_percent(interval=None)
                 elapsed_time = time.time() - start_time
@@ -158,7 +158,7 @@ def monitor_cpu_usage(loop_type, iterations, check_interval):
     elif loop_type == 'while':
         i = 0
         while i < iterations:
-            # Check CPU usage every 1000 iterations
+            # Check CPU usage every 10000000 iterations
             if i % check_interval == 0:
                 cpu_usage = psutil.cpu_percent(interval=None)
                 elapsed_time = time.time() - start_time
