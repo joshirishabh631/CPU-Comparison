@@ -139,45 +139,39 @@ print(f"While loop time: {while_loop_time}")
 import psutil
 import time
 
-iterations = 100000000  
-check_points = 6  # Number of CPU checks during the loop
-interval = 1  # Interval of 1 second 
+iterations = 100000000  # Total iterations
+check_interval = 10000000   # CPU usage check every 1000 iterations
 
-def monitor_cpu_usage(loop_type, iterations, check_points, interval):
+def monitor_cpu_usage(loop_type, iterations, check_interval):
     print(f"\nMonitoring CPU usage during '{loop_type}' loop:")
-    
-    cpu_usages = []
-    start_time = time.time()
-    next_check_time = start_time + interval
 
+    start_time = time.time()
+    
     if loop_type == 'for':
         for i in range(iterations):
-         
-            if len(cpu_usages) < check_points and time.time() >= next_check_time:
+            # Check CPU usage every 1000 iterations
+            if i % check_interval == 0:
                 cpu_usage = psutil.cpu_percent(interval=None)
                 elapsed_time = time.time() - start_time
-                print(f"Check {len(cpu_usages) + 1}: Time: {elapsed_time:.2f}s | {loop_type} Loop CPU Usage: {cpu_usage}%")
-                cpu_usages.append(cpu_usage)
-                next_check_time += interval 
-        
+                print(f"Iteration {i}: Time: {elapsed_time:.2f}s | {loop_type} Loop CPU Usage: {cpu_usage}%")
+    
     elif loop_type == 'while':
         i = 0
         while i < iterations:
-           
-            if len(cpu_usages) < check_points and time.time() >= next_check_time:
+            # Check CPU usage every 1000 iterations
+            if i % check_interval == 0:
                 cpu_usage = psutil.cpu_percent(interval=None)
                 elapsed_time = time.time() - start_time
-                print(f"Check {len(cpu_usages) + 1}: Time: {elapsed_time:.2f}s | {loop_type} Loop CPU Usage: {cpu_usage}%")
-                cpu_usages.append(cpu_usage)
-                next_check_time += interval 
+                print(f"Iteration {i}: Time: {elapsed_time:.2f}s | {loop_type} Loop CPU Usage: {cpu_usage}%")
             i += 1
 
     print(f"\n{loop_type} loop complete.\n")
 
-monitor_cpu_usage('for', iterations, check_points, interval)
+# Monitor CPU usage for 'for' loop
+monitor_cpu_usage('for', iterations, check_interval)
 
-
-monitor_cpu_usage('while', iterations, check_points, interval)
+# Monitor CPU usage for 'while' loop
+monitor_cpu_usage('while', iterations, check_interval)
 
 print("Monitoring complete.")
 
@@ -185,7 +179,7 @@ print("Monitoring complete.")
 
 
 #### Output-
-![Program Output](./Images/psutil1.png)
+![Program Output](./Images/psutil2.png)
 
 ## Graph of CPU percentage usage -:
 
