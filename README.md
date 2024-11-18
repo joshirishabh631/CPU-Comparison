@@ -1,6 +1,6 @@
 # CPU Performance Comparison of Various Loops in Python
 
-![Python Logo](./Images/python.png)
+![Python Logo](./Images/python.jpeg)
 ## Project Overview
 This project compares the performance of different loop structures in Python, focusing on their efficiency in terms of execution time. The comparison includes various types of loops, such as `for`, `while`.
 
