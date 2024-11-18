@@ -183,10 +183,10 @@ print("Monitoring complete.")
 
 ## Graph of CPU percentage usage -:
 
-- Avg of For Loop CPU usage =(44.0+34.4+48.1+38.7+79.8+39.3)/6= **47.38%**
-- Avg of While Loop CPU usage =(29.9+28.4+26.7+26.1+26.2+26.1)/6= **27.23%**
+- Avg of For Loop CPU usage =(0.0+54.5+31.7+26.5+26.6+26.8+26.9+26.6+26.6+28.1)/10= **27.43%**
+- Avg of While Loop CPU usage =(26.9+26.1+29.7+28.0+26.3+27.8+26.7+26.4+26.2+26.5)/10= **27.06%**
 
- ![Program Output](./Images/chart.png)
+ ![Program Output](./Images/usage.png)
 
 
 ### cprofile module
