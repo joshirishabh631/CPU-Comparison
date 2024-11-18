@@ -32,7 +32,7 @@
 
 ## **Objective**
 
-This document compares the performance of **For loops and while loops** in Python. We will look at how long each type of loop takes to execute and how much computer resources they use. By doing this, we aim to find out which loop is more efficient and when it is best to use each type.
+This document compares the performance of `For` loops and `while` loops in Python. We will look at how long each type of loop takes to execute and how much computer resources they use. By doing this, we aim to find out which loop is more efficient and when it is best to use each type.
 
 ## **Understanding Loops**
  
@@ -47,7 +47,7 @@ There are basically two different Loops in Python.
 ## While Loop 
 
 
-A **While loop** is a way to repeat actions in your program until given condition turns true. It keeps running a block of code as long as a certain condition remains true. Once that condition becomes false, the loop stops.
+A `While loop` is a way to repeat actions in your program until given condition turns true. It keeps running a block of code as long as a certain condition remains true. Once that condition becomes false, the loop stops.
 
 **Example code -**
 ```python
@@ -72,7 +72,7 @@ print("Game over.")
 
 ## For Loop 
 
-In Python, a **For loop** is used to repeat a block of code a certain number of times or to go through items in a collection (like a list, string, or range of numbers). It's great for when you know exactly how many times you want to loop.
+In Python, a `For loop` is used to repeat a block of code a certain number of times or to go through items in a collection (like a list, string, or range of numbers). It's great for when you know exactly how many times you want to loop.
 
 **Example code -**
 ```python
@@ -104,7 +104,7 @@ CPU comparison means looking at how well the CPU (the brain of the computer) han
 
 ### time module
 
-* **Firstly we are comparing "For and While loop" as per the time taken by both of them while execution. We have used **"Time"** Module for checking that how much time did "For loop" takes to be executed and same for "While loop".**
+* **Firstly we are comparing `For` and `While` loop as per the time taken by both of them while execution. We have used **"Time"** Module for checking that how much time did "For loop" takes to be executed and same for "While loop".**
 
 **Example code-** 
 ```python
@@ -132,7 +132,7 @@ print(f"While loop time: {while_loop_time}")
 
 ### psutil module 
 
-* **Now, showing CPU usage of "For and While Loop" by using **"psutil" (process and system utilities)** module, which fetch cpu usage details from APIs which are being use by any operating system . e.g.- (cat /proc/stat)- we can use this command for checking CPU usage. psutill module fetch data from /proc/stat and give usage details for execution of loops and here we will show CPU usage percentage during running Loop.**
+* **Now, showing CPU usage of `For` and `While` Loop by using **"psutil" (process and system utilities)** module, which fetch cpu usage details from APIs which are being use by any operating system . e.g.- (cat /proc/stat)- we can use this command for checking CPU usage. psutill module fetch data from /proc/stat and give usage details for execution of loops and here we will show CPU usage percentage during running Loop.**
 
 **Example code**
 ```python
@@ -183,15 +183,15 @@ print("Monitoring complete.")
 
 ## Graph of CPU percentage usage -:
 
-- Avg of **For Loop** CPU usage =(0.0+54.5+31.7+26.5+26.6+26.8+26.9+26.6+26.6+28.1)/10= **27.43%**
-- Avg of **While Loop** CPU usage =(26.9+26.1+29.7+28.0+26.3+27.8+26.7+26.4+26.2+26.5)/10= **27.06%**
+- Avg of `For Loop` CPU usage =(0.0+54.5+31.7+26.5+26.6+26.8+26.9+26.6+26.6+28.1)/10= **27.43%**
+- Avg of `While Loop` CPU usage =(26.9+26.1+29.7+28.0+26.3+27.8+26.7+26.4+26.2+26.5)/10= **27.06%**
 
  ![Program Output](./Images/usage1.png)
 
 
 ### cprofile module
 
-* **Now, we will use **"cprofile"** module to see the CPU comparison between "For and While loops". cprofile module helps to give various aspects as :**
+* **Now, we will use **`cprofile`** module to see the CPU comparison between `For` and `While` loops. cprofile module helps to give various aspects as :**
     
     ncalls: Number of times a function was called ,
     
@@ -201,7 +201,7 @@ print("Monitoring complete.")
     
     percall: Time per function call (tottime / ncalls or cumtime / ncalls).
 
-Let us see it with an example to compare **For loop** and **While loop**:
+Let us see it with an example to compare `For` loop and `While` loop:
 
 
 ```python
@@ -236,19 +236,19 @@ cProfile.run('run_while_loop()')
 
 **Execution Time:**
 
-- The **For loop** is faster because it is optimized for a set number of iterations.
-- The **While loop** takes longer because it checks conditions and increments more during each iteration.
+- The `For` loop is faster because it is optimized for a set number of iterations.
+- The `While` loop takes longer because it checks conditions and increments more during each iteration.
 
 **CPU Usage:**
 
-- The **For loop** uses more CPU because it needs more power to run each iteration.
-- The **While loop** uses less CPU but takes more time to finish due to its flexible structure.
+- The For` loop uses more CPU because it needs more power to run each iteration.
+- The `While` loop uses less CPU but takes more time to finish due to its flexible structure.
 
-**Graph showing CPU usage for both For and While Loop with respect to time.**
+**Graph showing CPU usage for both `For` and `While` Loop with respect to time.**
 ![Program Output](./Images/graph3.png)
 
 ## **Best use cases**
-#### **When we use "While Loop"?**
+#### **When we use `While` Loop?**
 
 * **Unknown Number of Iterations:** Use when you don't know in advance how many times the loop will run. It continues until a condition is met.
 
@@ -319,21 +319,21 @@ for fruit in fruits:
 
 ### **Summary:**
 
-**Use a "While Loop" when the number of iterations is uncertain, and the loop depends on a condition that can change during execution.**
+**Use a `While` Loop when the number of iterations is uncertain, and the loop depends on a condition that can change during execution.**
 
-**Use a "For Loop" when you know the number of iterations in advance or are working with collections (like lists or ranges).**
+**Use a `For` Loop when you know the number of iterations in advance or are working with collections (like lists or ranges).**
 
 ## Conclusion-
 
-This analysis of **For Loop** and **While Loop** in Python reveals that:
+This analysis of `For` Loop and `While` Loop in Python reveals that:
 
-* Performance: "For Loops" are generally faster, executing in about 7.90 seconds, while **While Loops** take around 14.97 seconds. This makes **For Loops** more efficient for tasks with a known number of iterations.
+* Performance: "For Loops" are generally faster, executing in about 7.90 seconds, while `While` Loops take around 14.97 seconds. This makes `For` Loops more efficient for tasks with a known number of iterations.
 
-* CPU Usage: **For Loops** also use CPU resources more effectively, consuming approximately 27.43%, compared to the "While Loop's 27.06% , so **For loop** is more efficient in this scenario also.
+* CPU Usage: `For` Loops also use CPU resources more effectively, consuming approximately 27.43%, compared to the `While` Loop's 27.06% , so `For` loop** is more efficient in this scenario also.
   
-* Best Use Cases: Use **For Loop** when the number of iterations is fixed, such as iterating through a list. Choose **While Loops** for scenarios where the number of iterations can change, like waiting for user input.
+* Best Use Cases: Use `For` Loop when the number of iterations is fixed, such as iterating through a list. Choose `While` Loops for scenarios where the number of iterations can change, like waiting for user input.
 
-In summary, **For Loops** are preferred for their speed and efficiency, while **While Loops** offer flexibility. Choosing the right loop type can significantly improve the performance of your Python code.
+In summary, `For` Loops are preferred for their speed and efficiency, while `While` Loops offer flexibility. Choosing the right loop type can significantly improve the performance of your Python code.
 
 
 ## References-
