@@ -67,7 +67,7 @@ print("Game over.")
 ```
 #### Output -
 
-![Program Output](Untitled.png)
+![Program Output](./Images/Untitled.png)
 
 
 ## For Loop 
@@ -83,7 +83,7 @@ print(squares)
 
 ```
 #### Output
-![Program Output](forloop.png)
+![Program Output](./Images/forloop.png)
 
 ## Uses of Loops 
 
@@ -128,7 +128,7 @@ print(f"For loop time: {for_loop_time}")
 print(f"While loop time: {while_loop_time}")
 ```
 #### Output-
-![Program Output](timeit.png)
+![Program Output](./Images/timeit.png)
 
 ### psutil module 
 
@@ -185,14 +185,14 @@ print("Monitoring complete.")
 
 
 #### Output-
-![Program Output](psutil1.png)
+![Program Output](./Images/psutil1.png)
 
 ## Graph of CPU percentage usage -:
 
 - Avg of For Loop CPU usage =(44.0+34.4+48.1+38.7+79.8+39.3)/6= **47.38%**
 - Avg of While Loop CPU usage =(29.9+28.4+26.7+26.1+26.2+26.1)/6= **27.23%**
 
- ![Program Output](chart.png)
+ ![Program Output](./Images/chart.png)
 
 
 ### cprofile module
@@ -236,7 +236,7 @@ print("\nProfiling the while loop:")
 cProfile.run('run_while_loop()')
 ```
 #### Output-
-![Program Output](cpro.png)
+![Program Output](./Images/cpro.png)
 
 ## Concluding CPU Comparsion-
 
@@ -251,7 +251,7 @@ cProfile.run('run_while_loop()')
 - The while loop uses less CPU but takes more time to finish due to its flexible structure.
 
 **Graph showing CPU usage for both For and While Loop with respect to time.**
-![Program Output](graph3.png)
+![Program Output](./Images/graph3.png)
 
 ## **Best use cases**
 #### **When we use while loops?**
@@ -274,7 +274,7 @@ while True:
         print("Invalid password, try again")
 ```
 #### Output-
-![Program Output](password.png)
+![Program Output](./Images/password.png)
 
 * **Condition-Based Repetition:** Use when you want to run the loop based on a condition that could change during the loop’s execution.
 
@@ -297,7 +297,7 @@ while temperature < critical_temperature:
 print("Warning: Critical temperature reached!")
 ```
 #### Output-
-![Program Output](temp.png)
+![Program Output](./Images/temp.png)
 
 
 ### **When to Use for Loop:**
@@ -310,7 +310,7 @@ for i in range(1, 11):
     print(i)
 ```
 #### Output-
-![Program Output](printfor.png)
+![Program Output](./Images/printfor.png)
 
 * **Iterating Over Collections:** Use when you want to iterate over elements in a list, tuple, set, or dictionary.
 
@@ -321,7 +321,7 @@ for fruit in fruits:
     print(fruit)
 ```
 #### Output-
-![Program Output](fruits.png)
+![Program Output](./Images/fruits.png)
 
 ### **Summary:**
 
