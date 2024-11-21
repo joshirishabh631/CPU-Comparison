@@ -21,7 +21,7 @@
    - [Time Module](#time-module)
    - [Psutil Module](#psutil-module)
    - [CProfile Module](#cprofile-module)
-   - [Final Comparison](#Final-Comparision)
+   - [Final Comparison](#Final-Comparison)
 
 5. [Best Use Cases](#best-use-cases)
 
@@ -230,7 +230,7 @@ cProfile.run('run_while_loop()')
 #### Output-
 ![Program Output](./Images/cpro.png)
 
-## Final-Comparision-
+## Final-Comparison
 
 **Execution Time:**
 
