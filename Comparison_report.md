@@ -348,5 +348,4 @@ In summary, `For` Loops are preferred for their speed and efficiency, while `Whi
 
 4. **Performance Comparison Articles**:
    - [Python Loop Performance Comparison](https://realpython.com/python-for-loop/)
-   - [Understanding Time Complexity in Python](https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/)
 
