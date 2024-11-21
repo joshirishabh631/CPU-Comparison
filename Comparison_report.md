@@ -240,7 +240,7 @@ cProfile.run('run_while_loop()')
 **CPU Usage:**
 
 - The `For loop` uses more CPU because it needs more power to run each iteration.
-- The `While loop` uses less CPU but takes more time to finish due to its flexible structure.
+- The `While loop` uses less CPU but takes more time to finish due to its straight structure and using less functions then `For loop`.
 
 **Graph showing CPU usage for both `For` and `While` Loop with respect to time.**
 ![Program Output](./Images/graph3.png)
