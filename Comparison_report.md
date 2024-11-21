@@ -21,7 +21,7 @@
    - [Time Module](#time-module)
    - [Psutil Module](#psutil-module)
    - [CProfile Module](#cprofile-module)
-   - [Concluding CPU Comparison](#Concluding-CPU-Comparision-)
+   - [Concluding CPU Comparison](#concluding-cpu-comparision-)
 
 5. [Best Use Cases](#best-use-cases)
 
