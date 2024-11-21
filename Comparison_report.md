@@ -230,7 +230,7 @@ cProfile.run('run_while_loop()')
 #### Output-
 ![Program Output](./Images/cpro.png)
 
-## Concluding CPU Comparsion-
+## Concluding CPU Comparsion
 
 **Execution Time:**
 
